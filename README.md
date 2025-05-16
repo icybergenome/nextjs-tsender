@@ -21,8 +21,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Features
-* Rainbow kit for wallet connection
-* Implement AirDrop for ERC20 token:
+- Rainbow kit for wallet connection
+- Implement AirDrop for ERC20 token:
 ```solidity
  function airdropERC20(
         address tokenAddress,
@@ -31,3 +31,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
         uint256 totalAmount
     )
 ```
+- Wallet connect feature to support third party wallets connection as well apart from basic ones i.e. Metamask, Phantom:
+    - [RainbowConfig](./src/rainbowKitConfig.tsx) ProjectId reflect to project id from [WalletConnect](https://cloud.reown.com/sign-in)
+- `Wagmi` acts as a provider for RainbowKit, its build on top of viem. Its encompass all the configs needed for RainbowKit
