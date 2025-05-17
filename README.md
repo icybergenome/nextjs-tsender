@@ -37,3 +37,10 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - `wagmi` package provides hooks to interact with blockchain/smart contracts via viem.
   - `wagmi/core` provides vanillajs library. Where ever we need interactivity without hooks we would use this.
 - In case anvil chain blocks are not mined automatically use command `pnpm anvil --block-time 10`
+- Unit testing using [Vitest](https://vitest.dev/)
+- E2E testing using:
+  - [Synpress](https://www.synpress.io/) - Test environment interactivity with web3
+  - [Playwright](https://playwright.dev/)
+```shell
+pnpm exec playwright test --ui
+```
