@@ -34,3 +34,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - Wallet connect feature to support third party wallets connection as well apart from basic ones i.e. Metamask, Phantom:
     - [RainbowConfig](./src/rainbowKitConfig.tsx) ProjectId reflect to project id from [WalletConnect](https://cloud.reown.com/sign-in)
 - `Wagmi` acts as a provider for RainbowKit, its build on top of viem. Its encompass all the configs needed for RainbowKit
+- `wagmi` package provides hooks to interact with blockchain/smart contracts via viem.
+  - `wagmi/core` provides vanillajs library. Where ever we need interactivity without hooks we would use this.
+- In case anvil chain blocks are not mined automatically use command `pnpm anvil --block-time 10`
