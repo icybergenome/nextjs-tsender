@@ -44,3 +44,10 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ```shell
 pnpm exec playwright test --ui
 ```
+
+* Resolve Synpress cache issue
+```shell
+# create wallet cache
+pnpm synpress
+```
+* After running above run the playwright test again, error related to cache still appear bt we should copy the cache name and update `.cache-synpress/<cache-name>`
