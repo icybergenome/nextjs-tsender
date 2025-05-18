@@ -51,3 +51,5 @@ pnpm exec playwright test --ui
 pnpm synpress
 ```
 * After running above run the playwright test again, error related to cache still appear bt we should copy the cache name and update `.cache-synpress/<cache-name>`
+
+- Static hosting is preferred for Web3 dApps. As no centralized server should be used. It should be user browser interacting with smart contracts directly.
